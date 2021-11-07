@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #131313;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo {
+  background-color: #dd1717;
+  background-image: linear-gradient(to top, #2a1616 0%, #dd1818 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3 ease;
+}
+
+.navbar_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #dd1818;
+  background: linear-gradient(to right, #2a1616, #dd1818);
+  color: #fff;
+  transition: all 0.3 ease;
+}
+
+.navbar__links:hover {
+  color: #dd1818;
+  transition: all 0.3 ease;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.column {
+  margin: 75px 0px 0px 200px;
+}
+
+.col {
+  margin: 125px 0px 0px 200px;
+}
+
+.h1 {
+  color: #303030;
+  font-size: 90px;
+  font-weight: 400;
+}
+
+.p {
+  color: #404040;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 500;
+}
+
+.card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  color: #f3f3f3;
+  font-weight: 375;
+  transition: transform 0.5s;
+}
+
+.card1 {
+  background-image: url(images/rockclimbing.jpeg);
+}
+
+.card2 {
+  background-image: url(images/bowling.jpeg);
+}
+
+.card3 {
+  background-image: url(images/game.jpg);
+}
+
+.card4 {
+  background-image: url(images/food.jpg);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
+.contact__background {
+  background-color: #000000;
+  background-color: linear-gradient(to right, #333333, #161616);
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.wrapper .title h1{
+  color: #ff6666;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact__form{
+  display: flex;
+}
+
+.input__fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input__fields,
+.msg{
+  width: 48%;
+}
+
+.input__fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #ff6666;
+  padding: 10px;
+  color: #ff6666;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  color: #ff6666;
+}
+
+
+.btn {
+    background: #dd3939;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0;
+    font-style: normal;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+
+.header{
+  font-size: 64px;
+  font-weight: 600;
+  color:#303030;
+  text-align: center;
+  margin: 25px 25px 0px 0px;
+}
+
+.content{
+ font-size: 16px;
+ font-weight: 500;
+ color: #404040;
+ margin: 25px 50px 0px 0px;
+ text-align: center;
+ margin-right: 350px;
+ margin-left: 350px;
+ margin-bottom: 75px;
+}
